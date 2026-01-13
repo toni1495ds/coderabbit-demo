@@ -6,17 +6,21 @@ They are enforced automatically during PR reviews.
 
 ---
 
-## R-1: `describe` must use the `title` variable
+## R-1: describe must use the title variable
 
-**Rule**  
-RSpec `describe` blocks must use the `title` variable instead of hardcoded strings.
+### Rule
+RSpec `describe` blocks must use the `title` variable instead of hardcoded string literals.
 
-**Why**  
+### Why
 Keeps test names consistent with TestRail and avoids naming drift.
 
-**Incorrect**
+### Signals of violation
+- `describe` using a quoted string literal
+- Test title not matching TestRail case name
+
+### Incorrect
 ```ruby
-describe 'Care Delivery: Save button behavior' do
+describe 'Sample automation test' do
 ```
 
 **Correct**

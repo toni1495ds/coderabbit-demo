@@ -1,4 +1,4 @@
-describe 'Sample automation 2.0 test' do
+describe 'Sample automation 3.0 test' do
   before(:all) do
     @client = OpenStruct.new(name: 'John')
   end
