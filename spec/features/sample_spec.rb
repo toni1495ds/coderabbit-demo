@@ -11,5 +11,6 @@ describe 'Sample automation test' do
     expect(2).to eq(2)
     expect(3).to eq(3)
     expect(4).to eq(4)
+    expect(5).to eq(5)
   end
 end
